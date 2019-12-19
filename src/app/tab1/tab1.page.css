@@ -1,11 +1,7 @@
-.PointCard {
-  width: 100vw;
-  margin-left: 5vw;
-}
-
 .PointCard img {
-  height: auto;
+  height: 250px;
   width: auto;
+  margin: 0 auto;
   overflow: hidden;
   opacity: 1;
 }
@@ -17,7 +13,8 @@
 }
 
 .slider img {
-  width: 80vw;
+  width: auto;
+  height: 400px;
 }
 
 .card img {
