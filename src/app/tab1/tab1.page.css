@@ -11,12 +11,9 @@ body {
 
 .slider {
   width: auto;
+  height: 40vh;
   max-width: 280px;
   padding-bottom: 5vh;
-}
-
-.slider img {
-  height: 40vh;
 }
 
 .card img {
