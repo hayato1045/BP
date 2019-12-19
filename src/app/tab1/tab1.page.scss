@@ -1,25 +1,54 @@
-body{
+// // body{
+// //   width: 100vw;
+// //   height: 100vh;
+// // }
+// .PointCard img {
+//   height: 35vh;
+//   overflow: hidden;
+//   opacity: 1;
+// }
+// .slider{
+//   width: 100vw;
+//   height: auto;
+//   max-width: 280px;
+//   padding-bottom: 5vh;
+//   // img{
+//   //   height: 40vh;
+//   // }
+//
+// }
+// .card{
+//   img{
+//       filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1))
+//
+//   }
+// }
+
+body {
   width: 100vw;
   height: 100vh;
 }
-.PointCard img {
-  height: 35vh;
+
+.PointCard {
+img {
+  height: auto;
+  width: 300px;
   overflow: hidden;
   opacity: 1;
-}
-.slider{
-  width: auto;
-  height: 40vh;
-  max-width: 280px;
+}}
+
+.slider {
+  width: 380px;
+  height: auto;
+  // max-width: 280px;
   padding-bottom: 5vh;
   // img{
   //   height: 40vh;
   // }
-
 }
-.card{
-  img{
-      filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1))
 
+.card {
+  img {
+    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1))
   }
 }

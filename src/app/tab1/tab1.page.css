@@ -4,15 +4,15 @@ body {
 }
 
 .PointCard img {
-  height: 35vh;
+  height: auto;
+  width: 300px;
   overflow: hidden;
   opacity: 1;
 }
 
 .slider {
-  width: auto;
-  height: 40vh;
-  max-width: 280px;
+  width: 380px;
+  height: auto;
   padding-bottom: 5vh;
 }
 
