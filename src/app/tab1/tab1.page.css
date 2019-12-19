@@ -1,5 +1,5 @@
 .PointCard {
-  width: 90vw;
+  width: 100vw;
   margin-left: 5vw;
 }
 
@@ -11,10 +11,13 @@
 }
 
 .slider {
-  width: 90vw;
+  width: 100vw;
   height: auto;
-  padding-bottom: 5vh;
-  margin-left: 5vw;
+  padding-bottom: 2vh;
+}
+
+.slider img {
+  width: 80vw;
 }
 
 .card img {
