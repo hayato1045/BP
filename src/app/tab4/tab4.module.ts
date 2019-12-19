@@ -17,12 +17,12 @@ import { Tab4Page } from './tab4.page';
 // export class Tab4PageModule {}
 
 @NgModule({
-  imports: [ 
+  imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    RouterModule.forChild([{ path: '', component: Tab3Page }])
+    RouterModule.forChild([{ path: '', component: Tab4Page }])
   ],
-  declarations: [Tab3Page]
+  declarations: [Tab4Page]
 })
 export class Tab4PageModule {}
