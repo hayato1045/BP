@@ -1,7 +1,11 @@
-.PointCard img {
+.PointCard {
   height: 25vh;
-  width: auto;
-  margin: 0 auto;
+}
+
+.PointCard img {
+  height: auto;
+  width: 90vw;
+  margin-left: 5vw;
   overflow: hidden;
   opacity: 1;
 }
