@@ -19,6 +19,7 @@
 .slider img {
   width: auto;
   height: 45vh;
+  margin: 0 auto;
 }
 
 .card img {
