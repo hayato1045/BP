@@ -10,5 +10,5 @@ ion-header {
 .shop-card {
   position: absolute;
   bottom: 0;
-  opacity: 1;
+  opacity: 0;
 }
