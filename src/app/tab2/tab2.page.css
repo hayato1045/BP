@@ -1,10 +1,6 @@
-ion-header {
-  overflow: hidden;
-}
-
 #map {
   width: 100vw;
-  height: 85vh;
+  height: 88vh;
   position: fixed;
 }
 
