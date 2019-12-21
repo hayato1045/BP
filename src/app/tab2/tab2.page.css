@@ -1,9 +1,14 @@
+ion-header {
+  overflow: hidden;
+}
+
 #map {
   width: 100vw;
-  height: 100vh;
+  height: 87vh;
 }
 
 .shop-card {
   position: absolute;
   bottom: 0;
+  opacity: 1;
 }
