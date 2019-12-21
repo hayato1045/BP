@@ -15,6 +15,11 @@ import { environment } from '../environments/environment';
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
+  // imports: [
+  //   AgmCoreModule.forRoot({
+  //     apiKey: 'AIzaSyBhljMO2LmCNaCBUkZITdhccYO91doZB2o'
+  //   }),
+  // ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -22,4 +27,4 @@ import { environment } from '../environments/environment';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
