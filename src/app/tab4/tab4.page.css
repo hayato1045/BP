@@ -1,0 +1,18 @@
+ion-list {
+  margin-top: 20px;
+}
+
+ion-item {
+  height: 60px;
+}
+
+ion-item icon-img {
+  margin-right: 20px;
+}
+
+ion-item i {
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+  margin-right: 10px;
+}

@@ -1,4 +1,9 @@
-img {
-  width: 100px;
-  height: auto;
+.button-icon img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+}
+
+ion-label {
+  font-size: 12px;
 }
