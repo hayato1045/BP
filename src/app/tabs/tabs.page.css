@@ -8,7 +8,23 @@ ion-tab-button {
   margin-top: 10px;
 }
 
+ion-tab-button .svg {
+  opacity: 0.6;
+}
+
 ion-label {
   font-size: 12px;
   margin-top: 4px;
+  font-weight: bold;
+}
+
+.tab-selected .svg {
+  opacity: 1;
+  --color-selected: #15923B !important;
+  stroke: #15923B;
+  fill: #15923B;
+}
+
+.tab-selected .svg path {
+  fill: #15923B;
 }
