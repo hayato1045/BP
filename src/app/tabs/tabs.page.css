@@ -4,7 +4,11 @@
   opacity: 0.6;
 }
 
+ion-tab-button {
+  margin-top: 10px;
+}
+
 ion-label {
   font-size: 12px;
-  margin-top: 2px;
+  margin-top: 4px;
 }
