@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { TestPage } from "../test/test.page";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab3',
@@ -7,6 +10,10 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  constructor() {}
+  constructor(private router: Router, private navCtrl: NavController) {}
+  
+  gotoTestByRouter() {
+    this.router.navigateByUrl('/test');
 
+}
 }

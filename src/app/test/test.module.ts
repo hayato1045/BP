@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+
 import { IonicModule } from '@ionic/angular';
-import { NextPage } from './next.page';
+
+import { TestPageRoutingModule } from './test-routing.module';
+
+import { TestPage } from './test.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    NextPageModule,
-      RouterModule.forChild([{ path: 'next', component: NextPage }])
+    TestPageRoutingModule
   ],
-  declarations: [NextPage]
+  declarations: [TestPage]
 })
-export class NextPageModule {}
+export class TestPageModule {}
