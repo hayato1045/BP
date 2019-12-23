@@ -1,20 +1,27 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      ニュース
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-  <!-- <icon-card>
-    <img src="/assets/news-card-two.svg" alt="">
-  </icon-card> -->
+
 <ion-content>
   <div class="news-content">
-  <div class="news-card">
-    <img src="/assets/news-card-two.svg" alt="">
+    <div class="news-card">
+      <img src="/assets/news-card-single.svg" alt="">
+      <div class="nextpage">
+        <a routerLink="/test" routerDirection="forward">続きを読む</a>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="/assets/news-card-single.svg" alt="">
+      <div class="nextpage">
+        <a routerLink="/test" routerDirection="forward">続きを読む</a>
+      </div>
+    </div>
   </div>
-    <ion-button routerLink="/test" routerDirection="forward">続きを読む</ion-button>
-  </div>
-  <a routerLink="/test" routerDirection="forward">続きを読む</a>
+    
 </ion-content>
