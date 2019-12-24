@@ -1,21 +1,16 @@
-.news-content{
-  margin: 20px auto;
 
-}
-.news-card {
-margin-bottom: 20px;
-img{
-  width: 90vw;
-  height: auto;
-  margin-left: 5vw;
-    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1));
-    
-}
-}
-.nextpage{
-  a{
-    position: absolute;
-    margin-top:-40px;
-    right: 10vw;
+ion-card{
+  .nextpage{
+    a{
+      position: absolute;
+      margin-top:-45px;
+      right: 8vw;
+      font-size: 18px;
+    }
   }
+}
+.date{
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.8;
 }
