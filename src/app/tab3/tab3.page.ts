@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class Tab3Page {
 
+  news : string ="today";
   constructor(private router: Router, private navCtrl: NavController) {}
   
   gotoTestByRouter() {
