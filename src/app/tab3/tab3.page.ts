@@ -14,6 +14,7 @@ export class Tab3Page {
   
   gotoTestByRouter() {
     this.router.navigateByUrl('/test');
+    
 
 }
 }

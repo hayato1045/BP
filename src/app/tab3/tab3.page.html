@@ -8,7 +8,40 @@
 
 
 <ion-content>
-  <div class="news-content">
+
+
+  <div class="ion-padding">
+  <ion-segment color="primary" [(ngModel)]="news">
+    <ion-segment-button value="today">
+      今日
+    </ion-segment-button> 
+    <ion-segment-button value="near">
+      付近のお店
+    </ion-segment-button>  
+    <ion-segment-button value="like">
+      登録したお店
+    </ion-segment-button> 
+  </ion-segment>
+  <div [ngSwitch]="news">
+     <ion-list *ngSwitchCase="'today'">
+      <ion-item>
+        today
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'near'">
+      <ion-item>
+        near
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'like'">
+      <ion-item>
+        like
+      </ion-item>
+    </ion-list>
+   </div>
+  </div>
+
+  <!-- <div class="news-content">
     <div class="news-card">
       <img src="/assets/news-card-single.svg" alt="">
       <div class="nextpage">
@@ -23,5 +56,5 @@
       </div>
     </div>
   </div>
-    
+     -->
 </ion-content>
