@@ -49,14 +49,16 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/tab2',
+        // redirectTo: '/tabs/tab1',　最初に読み込まれるページ
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/tab2',
+    // redirectTo: '/tabs/tab1',　最初に読み込まれるページ
     pathMatch: 'full'
   }
 ];
