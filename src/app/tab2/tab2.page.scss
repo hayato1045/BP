@@ -1,11 +1,13 @@
 
 #map{
   width: 100vw;
-  height: 88vh;
+  height: 100vh;
   position: fixed;
 }
 #shop-card{
+  img{
+    margin-bottom: -5px;
+  }
   position: absolute;
   bottom: 0;
-  opacity: 1;
 }
