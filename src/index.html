@@ -43,8 +43,8 @@
   var opts = {
     zoom: 15,//地図の縮尺
     center: latlng, //初期位置の変数
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: true    };
   
 //地図を表示させるエリアのidを指定
   var map = new google.maps.Map(document.getElementById("map"), opts);
@@ -56,6 +56,7 @@
       map: map,
       icon:'assets/pin.svg',
     });
+
     //クリックしたら指定したurlに遷移するイベント
     // google.maps.event.addListener(markers, 'click', (function(url){
     //   return function(){ location.href = url; };
