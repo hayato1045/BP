@@ -5,11 +5,9 @@
   position: fixed;
 }
 #shop-card{
-  img{
-    margin-bottom: -5px;
-  }
+
   position: absolute;
-  bottom: 55px;
+  bottom: 50px;
   display: none;
   position: fixed;
 
@@ -22,6 +20,6 @@
   right: 0;
   bottom: 0;
   margin-right: 0px;
-  margin-bottom: 280px;
+  margin-bottom: 30vh;
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
 }
