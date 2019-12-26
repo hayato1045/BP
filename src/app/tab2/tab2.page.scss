@@ -14,10 +14,14 @@
   position: fixed;
 
 }
-#btnCurLocation{
+#CurrentLocation{
   position: absolute;
-  width: 100px;
-  height: 100px;
-  margin-top: 100px;
+  width: 80px;
+  height: 80px;
   z-index: 1000;
+  right: 0;
+  bottom: 0;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
 }
