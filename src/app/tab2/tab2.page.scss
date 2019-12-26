@@ -4,13 +4,12 @@ height:50px;
 #map{
   width: 100vw;
   height: calc(100vh - 100px);
-  position: fixed;
 }
 #shop-card{
   bottom: 0;
   display: none;
   position: fixed;
-  margin-bottom: 65px;
+  // margin-bottom: 65px;
 }
 #CurrentLocation{
   position: absolute;
