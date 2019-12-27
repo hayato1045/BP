@@ -81,12 +81,29 @@ height:50px;
     height:  60px;
   }
 }
-.active{
-  img{
-  transition: all 0.25s ease-in-out;
-  opacity: 0;
+.active
+img{
+  animation: toumei 0.5s;
+  // transition: all 0.25s ease-in-out;
+  // opacity: 0;
 }
-}
+@keyframes toumei{
+    0%{
+       opacity:1;
+    }
+    40%{
+      opacity: 0.5;
+    }    
+    50%{
+      opacity: 0;
+    }
+    60%{
+      opacity:0.5 ;
+    }    
+    100%{
+      opacity: 1;
+    }
+  }
 
 
 #currentlocation{

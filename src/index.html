@@ -132,7 +132,10 @@
               $('#currentlocation-before').toggleClass('active');
               $('#currentlocation').slideToggle();
             });
-
+            google.maps.event.addListener(map, 'click', function (event) {
+              $('#shop-card').css('display', 'none');
+              $('#currentlocation').css('display', 'none');
+            });
             $('#currentlocation-before').click(function () {
               map.panTo(latlng);
             });
