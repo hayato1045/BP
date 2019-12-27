@@ -10,9 +10,10 @@ height:50px;
 }
 // #shop-card{
 //   bottom: 0;
-//   display: none;
+//   display: block;
 //   position: absolute;
 //   // margin-bottom: 65px;
+//   z-index: 1000;
 // }
 // #CurrentLocation{
 //   position: absolute;
@@ -22,7 +23,6 @@ height:50px;
 //   right: 0;
 //   top: 0;
 //   margin-right: 20px;
-//   margin-top: 150px;
 //   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
 //   img{
 //     width: 60px;
@@ -30,25 +30,70 @@ height:50px;
 //   }
 // }
 
-.map-view{
-  position: absolute;
-  bottom: 0;
-  #shop-card{
-      display: none;
-      // margin-bottom: 65px;
-    }
-    #CurrentLocation{
-      position: relative;
-      width: 60px;
-      right: 0;
-      margin-left: 80vw;
+// .map-view{
+//   width: 100vw;
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
 
-      filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
-      img{
-        width: 60px;
-        height:  60px;
-        z-index: 1000;
-        margin-bottom: 50px;
-      }
-    }
+//   #shop-card{
+//       display: block;
+//       // margin-bottom: 65px;
+//     }
+//     #CurrentLocation{
+//       position: relative;
+//       width: 60px;
+//       right: 0;
+//       margin-right: 5vw;
+//       filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+//       img{
+//         width: 60px;
+//         height:  60px;
+//         z-index: 1000;
+//         margin-bottom: 50px;
+//       }
+//     }
+// }
+
+
+#shop-card{
+  bottom: 0;
+  display: none;
+  position: absolute;
+  // margin-bottom: 65px;
+  z-index: 1000;
+}
+#currentlocation-before{
+  position: absolute;
+  width: 60px;
+  height: auto;
+  z-index: 1000;
+  right: 0;
+  bottom: 50px;
+  margin-right: 20px;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+  img{
+    width: 60px;
+    height:  60px;
+  }
+}
+.active{
+  display: none;
+}
+
+
+#currentlocation{
+  position: absolute;
+  width: 60px;
+  height: 250px;
+  z-index: 1000;
+  display: none;
+  right: 0;
+  bottom: 75px;
+  margin-right: 20px;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+  img{
+    width: 60px;
+    height:  60px;
+  }
 }

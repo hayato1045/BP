@@ -129,9 +129,11 @@
             google.maps.event.addListener(marker, 'click', function (event) {
               $('#shop-card').slideToggle();
               map.panTo(new google.maps.LatLng(35.562753, 139.716135));
+              $('#currentlocation-before').toggleClass('active');
+              $('#currentlocation').slideToggle();
             });
 
-            $('#CurrentLocation').click(function () {
+            $('#currentlocation').click(function () {
               map.panTo(latlng);
             });
 
