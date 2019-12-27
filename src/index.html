@@ -29,7 +29,7 @@
 <body>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script
     src="https://maps.google.com/maps/api/js?key=AIzaSyBhljMO2LmCNaCBUkZITdhccYO91doZB2o&amp;language=ja"></script>
   <!-- <script src="https://maps.google.com/maps/api/js?key=AIzaSyBFUqOCINhq0B3wunqP_6JgFcxSey8Lc18&amp;language=ja"></script> -->
@@ -103,7 +103,8 @@
             };
 
             var opts = {
-              zoom: 15,//地図の縮尺
+              zoom: 8,//地図の縮尺
+              // zoom: 15,//地図の縮尺
               center: latlng, //初期位置の変数
               mapTypeId: google.maps.MapTypeId.ROADMAP,
               disableDefaultUI: true
