@@ -9,7 +9,7 @@ describe('SearchPage', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchPage ],
+      declarations: [SearchPage],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
@@ -21,4 +21,7 @@ describe('SearchPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });
+
+
