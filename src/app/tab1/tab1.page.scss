@@ -3,10 +3,11 @@ ion-toolbar, ion-tab-bar{
   }
 .PointCard {
   height: 25％;
+  width: auto;
   img {
     height: auto;
     width: 90vw;
-    margin-left: 5vw;
+    margin: 5% 5vw;
     overflow: hidden;
     opacity: 1;
   }
@@ -14,15 +15,18 @@ ion-toolbar, ion-tab-bar{
 
 .slider {
   width: 100vw;
-  height: auto;
-  padding-bottom: 2％;
+  height: 60%;
+  
   img{
     width: auto;
     height: 45％;
     margin: 0 auto;
+    padding: 5% auto;
   }
 }
-
+.swiper-pagination{
+  bottom: -10%;
+}
 .card {
   img {
     filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1))
