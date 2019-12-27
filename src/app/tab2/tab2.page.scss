@@ -1,13 +1,11 @@
 ion-toolbar, ion-tab-bar{
 height:50px;
 }
-ion-content{
-  width: 100vw;
-  height: calc(100vh - 100px);
-}
+
 #map{
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100% - 100px);
+  
 }
 #shop-card{
   bottom: 0;
