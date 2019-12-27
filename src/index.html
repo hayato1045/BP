@@ -125,7 +125,6 @@
               position: new google.maps.LatLng(35.562753, 139.716135), // 緯度・経度
               icon: 'assets/pin.svg',
             });
-
             google.maps.event.addListener(marker, 'click', function (event) {
               $('#shop-card').slideToggle();
               map.panTo(new google.maps.LatLng(35.562753, 139.716135));
@@ -133,7 +132,7 @@
               $('#currentlocation').slideToggle();
             });
 
-            $('#currentlocation').click(function () {
+            $('#currentlocation-before').click(function () {
               map.panTo(latlng);
             });
 
