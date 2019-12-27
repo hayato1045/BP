@@ -7,7 +7,7 @@ ion-toolbar, ion-tab-bar{
   img {
     height: auto;
     width: 90vw;
-    margin: 5% 5vw;
+    margin: 5% 0 0 5vw;
     overflow: hidden;
     opacity: 1;
   }
@@ -16,12 +16,14 @@ ion-toolbar, ion-tab-bar{
 .slider {
   width: 100vw;
   height: 60%;
-  
+  margin: 0 auto;
+  h1{
+    margin: 0 ;
+  }
   img{
     width: auto;
     height: 50％;
     margin: 0 auto;
-    padding:0 auto 10% ;
   }
 }
 .swiper-pagination{
