@@ -1,15 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>search</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="戻る" defaultHref="/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>お店を探す</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="お店の名前"></ion-searchbar>
 
-<ion-searchbar (ionInput)="getItems($event)" placeholder="お店の名前"></ion-searchbar>
+  <ion-list lines="full">
+    <ion-item button *ngFor="let item of lists" routerLink="{{item.url}}">
+      <ion-label>{{item.name}} <p>{{item.relation}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
-<ion-list lines="full">
-  <ion-item button *ngFor="let item of lists" routerLink="{{item.url}}">
-    <ion-label>{{item.name}} <p>{{item.relation}}</p>
-    </ion-label>
-  </ion-item>
-</ion-list>
+</ion-content>
