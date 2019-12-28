@@ -8,16 +8,24 @@
 
 <ion-content>
 
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="お店の名前"></ion-searchbar>
+
+  <ion-list lines="full">
+    <ion-item button *ngFor="let item of lists" routerLink="{{item.url}}">
+      <ion-label>{{item.name}} <p>{{item.relation}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
   <!-- <div class="map-view"> -->
 
-  <div id="search-before" routerLink="/search" routerDirection="forward">
+  <div id="search">
     <img src="assets/search.svg" alt="">
   </div>
-  <div id="search" routerLink="/search" routerDirection="forward">
+  <!-- <div id="search">
     <img src="assets/search.svg" alt="">
-  </div>
-  <div id="currentlocation"><img src="/assets/location.svg" alt=""></div>
-  <div id="currentlocation-before">
+  </div> -->
+  <!-- <div id="currentlocation"><img src="/assets/location.svg" alt=""></div> -->
+  <div id="currentlocation">
     <img src="/assets/location.svg" alt="">
   </div>
   <div id="shop-card" routerLink="/shop" routerDirection="forward">
