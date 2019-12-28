@@ -131,10 +131,13 @@
               map.panTo(new google.maps.LatLng(35.562753, 139.716135));
               $('#currentlocation-before').toggleClass('active');
               $('#currentlocation').slideToggle();
+              $('#search-before').toggleClass('active');
+              $('#search').slideToggle();
             });
             google.maps.event.addListener(map, 'click', function (event) {
               $('#shop-card').css('display', 'none');
               $('#currentlocation').css('display', 'none');
+              $('#search').css('display', 'none');
             });
             $('#currentlocation-before').click(function () {
               map.panTo(latlng);
