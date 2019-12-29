@@ -69,21 +69,58 @@
               position: latlng   // 緯度・経度
             });
 
-            var marker = new google.maps.Marker({
+            // var marker = new google.maps.Marker({
+            //   map: map,             // 対象の地図オブジェクト
+            //   position: new google.maps.LatLng(35.562753, 139.716135), // 緯度・経度
+            //   icon: 'assets/pin.svg',
+            // });
+            var cafe = new google.maps.Marker({
               map: map,             // 対象の地図オブジェクト
               position: new google.maps.LatLng(35.562753, 139.716135), // 緯度・経度
               icon: 'assets/pin.svg',
             });
-            google.maps.event.addListener(marker, 'click', function (event) {
-              $('#shop-card').slideToggle();
+
+            var bakery = new google.maps.Marker({
+              map: map,             // 対象の地図オブジェクト
+              position: new google.maps.LatLng(35.010362, 135.768735), // 緯度・経度
+              icon: 'assets/pin.svg',
+            });
+
+            var sweets = new google.maps.Marker({
+              map: map,             // 対象の地図オブジェクト
+              position: new google.maps.LatLng(43.066052, 141.348294), // 緯度・経度
+              icon: 'assets/pin.svg',
+            });
+
+            google.maps.event.addListener(cafe, 'click', function (event) {
+              $('#shop-cafe').slideToggle();
               map.panTo(new google.maps.LatLng(35.562753, 139.716135));
               $('#currentlocation').toggleClass('active');
               // $('#currentlocation').slideToggle();
               $('#search').toggleClass('active');
               // $('#search').slideToggle();
             });
+            google.maps.event.addListener(bakery, 'click', function (event) {
+              $('#shop-bakery').slideToggle();
+              map.panTo(new google.maps.LatLng(35.010362, 135.768735));
+              $('#currentlocation').toggleClass('active');
+              // $('#currentlocation').slideToggle();
+              $('#search').toggleClass('active');
+              // $('#search').slideToggle();
+            });
+            google.maps.event.addListener(sweets, 'click', function (event) {
+              $('#shop-sweets').slideToggle();
+              map.panTo(new google.maps.LatLng(43.066052, 141.348294));
+              $('#currentlocation').toggleClass('active');
+              // $('#currentlocation').slideToggle();
+              $('#search').toggleClass('active');
+              // $('#search').slideToggle();
+            });
+
             google.maps.event.addListener(map, 'click', function (event) {
-              $('#shop-card').css('display', 'none');
+              $('#shop-cafe').css('display', 'none');
+              $('#shop-bakery').css('display', 'none');
+              $('#shop-sweets').css('display', 'none');
               $('#currentlocation').removeClass('active');
               $('#search').removeClass('active');
             });
@@ -91,9 +128,40 @@
             $('#currentlocation').click(function () {
               map.panTo(latlng);
             });
-            $('#currentlocation').click(function () {
-              map.panTo(latlng);
+
+
+
+
+
+
+
+            $('#cafe').click(function () {
+              $('#shop-cafe').slideToggle();
+              $('#currentlocation').toggleClass('active');
+              $('#search').toggleClass('active');
+              map.panTo(cafe.position);
             });
+            $('#sweets').click(function () {
+              $('#shop-sweets').slideToggle();
+              $('#currentlocation').toggleClass('active');
+              $('#search').toggleClass('active');
+              map.panTo(sweets.position);
+            });
+            $('#bakery').click(function () {
+              $('#shop-bakery').slideToggle();
+              $('#currentlocation').toggleClass('active');
+              $('#search').toggleClass('active');
+              map.panTo(bakery.position);
+            });
+
+
+
+
+
+
+
+
+
 
 
           },
@@ -126,8 +194,12 @@
         $('#search-bar').toggleClass('active');
         $('#search-list').toggleClass('active');
         $('#map').toggleClass('active');
-        $('#shop-card').css('display', 'none');
+        $('#shop-cafe').css('display', 'none');
+        $('#shop-bakery').css('display', 'none');
+        $('#shop-sweets').css('display', 'none');
         $('#currentlocation').toggleClass('hide');
+        $('#currentlocation').removeClass('active');
+        $('#search').removeClass('active');
         // $('ion-searchbar').css('display', 'block');
         // $('ion-list').css('display', 'block');
         // $('#map').css('display', 'none');
@@ -141,8 +213,15 @@
         }
 
       });
+      $('ion-item').click(function () {
+        $('#map').removeClass('active');
+        $('#search-bar').removeClass('active');
+        $('#search-list').removeClass('active');
+        $('#currentlocation').removeClass('hide');
+        $('.search-img').attr('src', '/assets/search.svg').addClass('open');
+        // map.panTo(item.location);
+      });
     }
-
 
     //地図描画を実行
     google.maps.event.addDomListener(window, 'load', map_canvas);

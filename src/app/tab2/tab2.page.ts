@@ -13,9 +13,9 @@ export class Tab2Page {
   }
   initializeItems() {
     this.lists = [
-      { name: 'カマタカフェ', relation: 'カフェ', url: '/shop', },
-      { name: 'パン屋-kamata', relation: 'パン屋', url: '/shop', },
-      { name: '蒲田屋', relation: '和菓子屋', url: '/shop', },
+      { name: 'カマタカフェ', relation: 'カフェ', location: 'new google.maps.LatLng(43.066052, 141.348294)' },
+      { name: 'パン屋-kamata', relation: 'パン屋', location: 'new google.maps.LatLng(35.562753, 139.716135)' },
+      { name: '蒲田屋', relation: '和菓子屋', location: 'new google.maps.LatLng(35.562753, 139.716135)' },
     ];
   }
 
@@ -35,4 +35,34 @@ export class Tab2Page {
 
 
 }
+// export class indexOf {
+//   lists: any;
+//   searchQuery: '';
+//   constructor() {
+//     this.initializeItems();
+//   }
+//   initializeItems() {
+//     this.lists = [
+//       { name: 'カマタカフェ', relation: 'カフェ', location: 'new google.maps.LatLng(43.066052, 141.348294)' },
+//       { name: 'パン屋-kamata', relation: 'パン屋', location: 'new google.maps.LatLng(35.562753, 139.716135)' },
+//       { name: '蒲田屋', relation: '和菓子屋', location: 'new google.maps.LatLng(35.562753, 139.716135)' },
+//     ];
+//   }
+
+
+//   getItems(ev: any) {
+//     this.initializeItems();
+//     const val = ev.target.value;
+//     if (val && val.trim() !== '') {
+//       this.lists = this.lists.filter((item) => {
+//         return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+//       });
+//     }
+//   }
+
+//   ngOnInit() {
+//   }
+
+
+// }
 

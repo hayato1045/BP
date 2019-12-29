@@ -10,9 +10,27 @@
 
   <ion-searchbar id="search-bar" (ionInput)="getItems($event)" placeholder="お店の名前"></ion-searchbar>
 
-  <ion-list lines="full" id="search-list">
-    <ion-item button *ngFor="let item of lists" routerLink="{{item.url}}">
+  <!-- <ion-item button *ngFor="let item of lists" routerLink="{{item.url}}"> -->
+  <!-- <ion-list lines="full" id="search-list">
+    <ion-item button *ngFor="let item of lists" id="shop-list">
       <ion-label>{{item.name}} <p>{{item.relation}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+  <ion-list lines="full" id="search-list">
+    <ion-item button id="cafe">
+      <ion-label>
+        カマタカフェ<p>カフェ</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button id="sweets">
+      <ion-label>
+        蒲田屋<p>和菓子屋</p>
+      </ion-label>
+    </ion-item>
+    <ion-item button id="bakery">
+      <ion-label>
+        Bakery-Kamata-<p>パン屋</p>
       </ion-label>
     </ion-item>
   </ion-list>
@@ -24,7 +42,14 @@
   <div id="currentlocation">
     <img src="/assets/location.svg" alt="">
   </div>
-  <div id="shop-card" routerLink="/shop" routerDirection="forward">
+
+  <div id="shop-cafe" routerLink="/shop" routerDirection="forward">
+    <img src="/assets/shop-card.svg" alt="">
+  </div>
+  <div id="shop-sweets" routerLink="/shop" routerDirection="forward">
+    <img src="/assets/shop-card.svg" alt="">
+  </div>
+  <div id="shop-bakery" routerLink="/shop" routerDirection="forward">
     <img src="/assets/shop-card.svg" alt="">
   </div>
   <div id="map"></div>
