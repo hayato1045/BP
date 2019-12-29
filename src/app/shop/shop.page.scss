@@ -5,9 +5,9 @@ ion-toolbar {
 
 .kind {
   font-size: 20px;
-  padding: 5px 15px;
-  border-radius: 20px;
-  width: 70px;
+  padding: 8px 20px;
+  border-radius: 40px;
+  width: 80px;
   text-align: center;
   font-weight: bold;
   color: white;
@@ -20,7 +20,7 @@ ion-toolbar {
   top: 0;
   overflow: hidden;
   width: 100vw;
-  height: 30vh;
+  height: 100vh;
   z-index: 1;
 
   iframe {
@@ -51,7 +51,10 @@ ion-toolbar {
   }
   .card-wrapper {
     height: 150px;
-    ion-card-subtitle,
+
+    ion-card-subtitle{
+      margin-bottom: 10px;
+    }
     ion-card-title {
       margin-bottom: 20px;
     }
