@@ -36,6 +36,22 @@ const routes: Routes = [
     path: 'news-text',
     loadChildren: () => import('./news-text/news-text.module').then( m => m.NewsTextPageModule)
   },
+  {
+    path: 'news-cafe',
+    loadChildren: () => import('./news-cafe/news-cafe.module').then( m => m.NewsCafePageModule)
+  },
+  {
+    path: 'shop-bakery',
+    loadChildren: () => import('./shop-bakery/shop-bakery.module').then( m => m.ShopBakeryPageModule)
+  },
+  {
+    path: 'news-sweets',
+    loadChildren: () => import('./news-sweets/news-sweets.module').then( m => m.NewsSweetsPageModule)
+  },
+  {
+    path: 'news-bakery',
+    loadChildren: () => import('./news-bakery/news-bakery.module').then( m => m.NewsBakeryPageModule)
+  },
   // {path: 'next',loadChildren: () => import('./next/next.module')},
   // {path: 'next',loadChildren: () => import('./next/next.module#NextPageModule')}
 

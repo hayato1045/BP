@@ -100,31 +100,48 @@
     </ion-list>
 
     <ion-list *ngSwitchCase="'like'">
-
-      <img src="/assets/shop-card-small-square.svg" alt="">
-      <img src="/assets/shop-card-small-square.svg" alt="">
-      <img src="/assets/shop-card-small-square.svg" alt="">
-      <img src="/assets/shop-card-small-square.svg" alt="">
-      <img src="/assets/shop-card-small-square.svg" alt="">
-
+      <ion-card class="like" routerLink="/news-cafe" routerDirection="forward">
+        <div class="shop-info">
+          <div class="card-wrapper">
+            <ion-card-subtitle>カフェ</ion-card-subtitle>
+            <ion-card-title>カマタカフェ</ion-card-title>
+            <div class="categories">
+              <div class="syousetu">小説</div>
+              <div class="ehon">絵本</div>
+              <div class="yousyo">洋書</div>
+            </div>
+          </div>
+        </div>
+      </ion-card>
+      <hr>
+      <ion-card class="like" routerLink="/news-sweets" routerDirection="forward">
+        <div class="shop-info">
+          <div class="card-wrapper">
+            <ion-card-subtitle>和菓子屋</ion-card-subtitle>
+            <ion-card-title>蒲田屋</ion-card-title>
+            <div class="categories">
+              <div class="syousetu">小説</div>
+              <div class="ehon">絵本</div>
+              <div class="yousyo">洋書</div>
+            </div>
+          </div>
+        </div>
+      </ion-card>
+      <hr>
+      <ion-card class="like" routerLink="/news-bakery" routerDirection="forward">
+        <div class="shop-info">
+          <div class="card-wrapper">
+            <ion-card-subtitle>パン屋</ion-card-subtitle>
+            <ion-card-title>BAKERY-KAMATA-</ion-card-title>
+            <div class="categories">
+              <div class="syousetu">小説</div>
+              <div class="ehon">絵本</div>
+              <div class="yousyo">洋書</div>
+            </div>
+          </div>
+        </div>
+      </ion-card>
+      <hr>
     </ion-list>
   </div>
-
-
-  <!-- <div class="news-content">
-    <div class="news-card">
-      <img src="/assets/news-card-single.svg" alt="">
-      <div class="nextpage">
-        <a routerLink="/test" routerDirection="forward">続きを読む</a>
-      </div>
-    </div>
-
-    <div class="news-card">
-      <img src="/assets/news-card-single.svg" alt="">
-      <div class="nextpage">
-        <a routerLink="/test" routerDirection="forward">続きを読む</a>
-      </div>
-    </div>
-  </div>
-     -->
 </ion-content>
