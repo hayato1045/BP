@@ -20,6 +20,22 @@ const routes: Routes = [
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
   },
+  {
+    path: 'shop-cafe',
+    loadChildren: () => import('./shop-cafe/shop-cafe.module').then( m => m.ShopCafePageModule)
+  },
+  {
+    path: 'shop-sweets',
+    loadChildren: () => import('./shop-sweets/shop-sweets.module').then( m => m.ShopSweetsPageModule)
+  },
+  {
+    path: 'shop-barkery',
+    loadChildren: () => import('./shop-barkery/shop-barkery.module').then( m => m.ShopBarkeryPageModule)
+  },
+  {
+    path: 'news-text',
+    loadChildren: () => import('./news-text/news-text.module').then( m => m.NewsTextPageModule)
+  },
   // {path: 'next',loadChildren: () => import('./next/next.module')},
   // {path: 'next',loadChildren: () => import('./next/next.module#NextPageModule')}
 

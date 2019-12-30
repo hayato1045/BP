@@ -92,28 +92,40 @@
             });
 
             google.maps.event.addListener(cafe, 'click', function (event) {
+              $('#shop-bakery').css('display', 'none');
+              $('#shop-sweets').css('display', 'none');
               $('#shop-cafe').slideToggle();
               map.panTo(new google.maps.LatLng(35.562753, 139.716135));
               $('#currentlocation').toggleClass('active');
-              // $('#currentlocation').slideToggle();
               $('#search').toggleClass('active');
-              // $('#search').slideToggle();
+
+              // if ($('#currentlocation').hasClass('active')) {
+              //   $('#currentlocation').toggleClass('active');
+              // }
+              // if ($("#currentlocation").hasClass("active")) {
+
+              //   //class activeがあれば
+              // } else if (!$("#currentlocation").hasClass("active")) {
+              //   $('#currentlocation').toggleClass('active');
+              // }
             });
             google.maps.event.addListener(bakery, 'click', function (event) {
+              $('#shop-cafe').css('display', 'none');
+              $('#shop-sweets').css('display', 'none');
               $('#shop-bakery').slideToggle();
               map.panTo(new google.maps.LatLng(35.010362, 135.768735));
+
               $('#currentlocation').toggleClass('active');
-              // $('#currentlocation').slideToggle();
               $('#search').toggleClass('active');
-              // $('#search').slideToggle();
             });
             google.maps.event.addListener(sweets, 'click', function (event) {
+              $('#shop-cafe').css('display', 'none');
+              $('#shop-bakery').css('display', 'none');
               $('#shop-sweets').slideToggle();
               map.panTo(new google.maps.LatLng(43.066052, 141.348294));
+
               $('#currentlocation').toggleClass('active');
-              // $('#currentlocation').slideToggle();
               $('#search').toggleClass('active');
-              // $('#search').slideToggle();
             });
 
             google.maps.event.addListener(map, 'click', function (event) {

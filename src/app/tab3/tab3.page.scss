@@ -1,13 +1,23 @@
-ion-toolbar, ion-tab-bar{
-  height:50px;
-  }
+// ion-toolbar, ion-tab-bar{
+//   height:50px;
+//   }
+ion-list{
+  padding-bottom: 10px;
+}
 ion-card{
-  .nextpage{
-    a{
-      position: absolute;
-      margin-top:-45px;
-      right: 8vw;
-      font-size: 18px;
-    }
+  margin: 10px auto;
+  box-shadow: none;
+  // margin: 10px auto;
+  padding: 15px 5px;  
+  ion-item{
+    background-color: white;
+  --inner-border-width:0;
+  }
+  .time{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0 10px 0 0;
+    font-size: 14px;
   }
 }

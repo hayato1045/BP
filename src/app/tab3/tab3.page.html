@@ -5,18 +5,18 @@
     </ion-title>
   </ion-toolbar>
   <ion-toolbar>
-  <div class="ion-padding">
-    <ion-segment color="primary" [(ngModel)]="news">
-      <ion-segment-button value="today">
-        今日
-      </ion-segment-button>
-      <ion-segment-button value="near">
-        付近のお店
-      </ion-segment-button>
-      <ion-segment-button value="like">
-        登録したお店
-      </ion-segment-button>
-    </ion-segment>
+    <div class="ion-padding">
+      <ion-segment color="primary" [(ngModel)]="news">
+        <ion-segment-button value="today">
+          今日
+        </ion-segment-button>
+        <ion-segment-button value="near">
+          付近のお店
+        </ion-segment-button>
+        <ion-segment-button value="like">
+          登録したお店
+        </ion-segment-button>
+      </ion-segment>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -27,31 +27,75 @@
   <div [ngSwitch]="news">
     <ion-list *ngSwitchCase="'today'">
       <ion-card>
-        <img src="/assets/news-card-single.svg" alt="">
-        <div class="nextpage">
-          <a routerLink="/test" routerDirection="forward">続きを読む</a>
-        </div>
+        <ion-item routerLink="/news-text" routerDirection="forward">
+          <ion-thumbnail slot="start">
+            <img src="/assets/app-icon.png"> </ion-thumbnail>
+          <ion-label>
+            <p>カマタカフェ</p>
+            <h2>営業時間のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
       </ion-card>
       <ion-card>
-        <img src="/assets/news-card-single.svg" alt="">
-        <div class="nextpage">
-          <a routerLink="/test" routerDirection="forward">続きを読む</a>
-        </div>
+        <ion-item routerLink="/news-text" routerDirection="forward">
+          <ion-thumbnail slot="start">
+            <img src="/assets/app-icon.png"> </ion-thumbnail>
+          <ion-label>
+            <p>カマタカフェ</p>
+            <h2>営業時間のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
       </ion-card>
+      <ion-card>
+        <ion-item routerLink="/news-text" routerDirection="forward">
+          <ion-thumbnail slot="start">
+            <img src="/assets/app-icon.png"> </ion-thumbnail>
+          <ion-label>
+            <p>カマタカフェ</p>
+            <h2>営業時間のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
+      </ion-card>
+
     </ion-list>
 
     <ion-list *ngSwitchCase="'near'">
       <ion-card>
-        <img src="/assets/news-card-single.svg" alt="">
-        <div class="nextpage">
-          <a routerLink="/test" routerDirection="forward">続きを読む</a>
-        </div>
+        <ion-item routerLink="/news-text" routerDirection="forward">
+          <ion-thumbnail slot="start">
+            <img src="/assets/app-icon.png">
+          </ion-thumbnail>
+          <ion-label>
+            <p>カマタカフェ</p>
+            <h2>営業時間のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
       </ion-card>
       <ion-card>
-        <img src="/assets/news-card-single.svg" alt="">
-        <div class="nextpage">
-          <a routerLink="/test" routerDirection="forward">続きを読む</a>
-        </div>
+        <ion-item routerLink="/news-text" routerDirection="forward">
+          <ion-thumbnail slot="start">
+            <img src="/assets/app-icon.png"> </ion-thumbnail>
+          <ion-label>
+            <p>カマタカフェ</p>
+            <h2>営業時間のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
+      </ion-card>
+      <ion-card>
+        <ion-item routerLink="/news-text" routerDirection="forward">
+          <ion-thumbnail slot="start">
+            <img src="/assets/app-icon.png"> </ion-thumbnail>
+          <ion-label>
+            <p>カマタカフェ</p>
+            <h2>営業時間のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
       </ion-card>
     </ion-list>
 
@@ -63,7 +107,7 @@
       <img src="/assets/shop-card-small-square.svg" alt="">
       <img src="/assets/shop-card-small-square.svg" alt="">
 
-  </ion-list>
+    </ion-list>
   </div>
 
 
