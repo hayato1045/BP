@@ -13,21 +13,29 @@ ion-toolbar, ion-tab-bar{
   }
 }
 
-.slider {
+ion-slides {
   width: 100vw;
   height: 65%;
   margin: 0 auto;
-  h1{
-    margin: 0 ;
+  ion-card{
+    ion-card-header{
+      ion-card-subtitle{
+        margin-bottom: 10px;
+        text-align: left;
+    }
   }
-  img{
-    width: auto;
-    height: 50％;
+    img {
+    width: 80vw;
+    height: 220px;
     margin: 0 auto;
+    }
   }
 }
-.card {
-  img {
-    filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.1))
-  }
+ion-button{
+  // width: 80vw;
+  width: calc(80vw - 60px);
+  margin:20px auto;
+  height: 40px;
+  font-size: 24px;
+font-weight: bold;
 }
