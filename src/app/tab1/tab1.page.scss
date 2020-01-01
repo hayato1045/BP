@@ -17,23 +17,29 @@ ion-toolbar, ion-tab-bar{
 
 ion-slides {
   width: 100vw;
-  height: 45vh;
+  height: 47.5vh;
   // margin-top: -5vh;
+  .sc-ion-card-ios-h{
+    margin-top: 0px;
+  }
   ion-card{
     height: 40vh;
     width: auto;
- margin-bottom: 5vh;
+
     ion-card-header{
       ion-card-subtitle{
         margin-bottom: 10px;
         text-align: left;
+    }
+    ion-card-title{
+      font-size: 24px;
     }
   }
     img {
     width:auto;
     height:20vh;
     margin: 0 auto;
-    padding: 0 10vw;
+    padding: 0 15vw;
     }
   }
 }
