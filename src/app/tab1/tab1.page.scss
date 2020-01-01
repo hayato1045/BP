@@ -4,7 +4,6 @@ ion-toolbar, ion-tab-bar{
 .pointcard {
   height: 30vh;
   width: auto;
-  margin: 5vh auto;
   padding: 0 5vw;
   
   img {
@@ -18,10 +17,12 @@ ion-toolbar, ion-tab-bar{
 
 ion-slides {
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
   margin: 0 auto;
   ion-card{
+    height: 45vh;
     width: 300px;
+ margin-bottom: 5vh;
     ion-card-header{
       ion-card-subtitle{
         margin-bottom: 10px;

@@ -2,9 +2,12 @@ ion-toolbar, ion-tab-bar{
   height:50px;
   }
 ion-list{
+  padding: 0 25px;
   margin-top: 20px;
 }
 ion-item{
+  --padding-start:0;
+  --padding-end:0;
   height: 60px;
   icon-img{
     margin-right: 20px;
@@ -12,8 +15,9 @@ ion-item{
   i{
     width: 30px;
     height: 30px;
-    opacity: 0.6;
+    opacity: 1;
     margin-right: 10px;
+    margin-left: 2.5vw;
   }
 
 }
