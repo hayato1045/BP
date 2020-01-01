@@ -146,25 +146,42 @@
 
 
 
-            $('#cafe').click(function () {
+            // $('#cafe').click(function () {
+            //   $('#shop-cafe').slideToggle();
+            //   $('#currentlocation').toggleClass('active');
+            //   $('#search').toggleClass('active');
+            //   map.panTo(cafe.position);
+            // });
+            // $('#sweets').click(function () {
+            //   $('#shop-sweets').slideToggle();
+            //   $('#currentlocation').toggleClass('active');
+            //   $('#search').toggleClass('active');
+            //   map.panTo(sweets.position);
+            // });
+            // $('#bakery').click(function () {
+            //   $('#shop-bakery').slideToggle();
+            //   $('#currentlocation').toggleClass('active');
+            //   $('#search').toggleClass('active');
+            //   map.panTo(bakery.position);
+            // });
+            $(document).on('click', '#cafe', function () {
               $('#shop-cafe').slideToggle();
               $('#currentlocation').toggleClass('active');
               $('#search').toggleClass('active');
               map.panTo(cafe.position);
             });
-            $('#sweets').click(function () {
+            $(document).on('click', '#sweets', function () {
               $('#shop-sweets').slideToggle();
               $('#currentlocation').toggleClass('active');
               $('#search').toggleClass('active');
               map.panTo(sweets.position);
             });
-            $('#bakery').click(function () {
+            $(document).on('click', '#bakery', function () {
               $('#shop-bakery').slideToggle();
               $('#currentlocation').toggleClass('active');
               $('#search').toggleClass('active');
               map.panTo(bakery.position);
             });
-
 
 
 
@@ -224,7 +241,15 @@
         }
 
       });
-      $('ion-item').click(function () {
+      // $('ion-item').click(function () {
+      //   $('#map').removeClass('active');
+      //   $('#search-bar').removeClass('active');
+      //   $('#search-list').removeClass('active');
+      //   $('#currentlocation').removeClass('hide');
+      //   $('.search-img').attr('src', '/assets/search.svg').addClass('open');
+      //   // map.panTo(item.location);
+      // });
+      $(document).on('click', 'ion-item', function () {
         $('#map').removeClass('active');
         $('#search-bar').removeClass('active');
         $('#search-list').removeClass('active');

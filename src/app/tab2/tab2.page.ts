@@ -13,9 +13,9 @@ export class Tab2Page {
   }
   initializeItems() {
     this.lists = [
-      { name: 'カマタカフェ', relation: 'カフェ', location: 'new google.maps.LatLng(43.066052, 141.348294)' },
-      { name: 'パン屋-kamata', relation: 'パン屋', location: 'new google.maps.LatLng(35.562753, 139.716135)' },
-      { name: '蒲田屋', relation: '和菓子屋', location: 'new google.maps.LatLng(35.562753, 139.716135)' },
+      { name: 'カマタカフェ', relation: 'カフェ', id: 'cafe' },
+      { name: 'パン屋-kamata', relation: 'パン屋', id: 'bakery' },
+      { name: '蒲田屋', relation: '和菓子屋', id: 'sweets' },
     ];
   }
 

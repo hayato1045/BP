@@ -11,13 +11,16 @@
   <ion-searchbar id="search-bar" (ionInput)="getItems($event)" placeholder="お店の名前"></ion-searchbar>
 
   <!-- <ion-item button *ngFor="let item of lists" routerLink="{{item.url}}"> -->
-  <!-- <ion-list lines="full" id="search-list">
-    <ion-item button *ngFor="let item of lists" id="shop-list">
+
+  <ion-list lines="full" id="search-list">
+    <ion-item button *ngFor="let item of lists" [id]="item.id">
+      <!-- <ion-item button *ngFor="let item of lists" id="shop-list" 　id="{{item.id}}"> -->
       <ion-label>{{item.name}} <p>{{item.relation}}</p>
       </ion-label>
     </ion-item>
-  </ion-list> -->
-  <ion-list lines="full" id="search-list">
+  </ion-list>
+
+  <!-- <ion-list lines="full" id="search-list">
     <ion-item button id="cafe">
       <ion-label>
         カマタカフェ<p>カフェ</p>
@@ -33,7 +36,7 @@
         Bakery-Kamata-<p>パン屋</p>
       </ion-label>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
 
   <div id="search">
     <img src="assets/search.svg" alt="" class="open search-img">
