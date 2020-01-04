@@ -50,12 +50,13 @@
             };
 
             var opts = {
-              zoom: 8,//地図の縮尺
-              // zoom: 15,//地図の縮尺
+              // zoom: 8,//地図の縮尺
+              zoom: 15,//地図の縮尺
               center: latlng, //初期位置の変数
               mapTypeId: google.maps.MapTypeId.ROADMAP,
               disableDefaultUI: true
             }; // マップオブジェクト作成
+
             var map = new google.maps.Map(
               document.getElementById("map"), // マップを表示する要素
               opts         // マップオプション
@@ -77,56 +78,132 @@
               map: map,             // 対象の地図オブジェクト
               position: new google.maps.LatLng(35.562753, 139.716135), // 緯度・経度
               icon: 'assets/pin.svg',
+              zoom: 15,
             });
 
             var bakery = new google.maps.Marker({
               map: map,             // 対象の地図オブジェクト
-              position: new google.maps.LatLng(35.010362, 135.768735), // 緯度・経度
+              position: new google.maps.LatLng(35.571647, 139.717652), // 緯度・経度
               icon: 'assets/pin.svg',
+              zoom: 15,
             });
 
             var sweets = new google.maps.Marker({
               map: map,             // 対象の地図オブジェクト
-              position: new google.maps.LatLng(43.066052, 141.348294), // 緯度・経度
+              position: new google.maps.LatLng(35.570116, 139.708308), // 緯度・経度
               icon: 'assets/pin.svg',
+              zoom: 15,
             });
+
+            // google.maps.event.addListener(cafe, 'click', function (event) {
+            //   $('#shop-bakery').css('display', 'none');
+            //   $('#shop-sweets').css('display', 'none');
+            //   $('#shop-cafe').slideToggle();
+            //   map.panTo(new google.maps.LatLng(35.562753, 139.716135));
+            //   $('#currentlocation').toggleClass('active');
+            //   $('#search').toggleClass('active');
+            // });
+
 
             google.maps.event.addListener(cafe, 'click', function (event) {
               $('#shop-bakery').css('display', 'none');
               $('#shop-sweets').css('display', 'none');
               $('#shop-cafe').slideToggle();
+
+              if ($("#shop-cafe").hasClass("active")) {
+                $('#shop-cafe').removeClass("active");
+              } else if (!$("#shop-cafe").hasClass("active")) {
+                $('#shop-cafe').addClass('active');
+              }
               map.panTo(new google.maps.LatLng(35.562753, 139.716135));
-              $('#currentlocation').toggleClass('active');
-              $('#search').toggleClass('active');
+              // $('#currentlocation').toggleClass('active');
+              // $('#search').toggleClass('active');
+              if (($("#shop-sweets").hasClass("active")) || ($("#shop-bakery").hasClass("active"))) {
+                $('#shop-sweets').removeClass("active");
+                $('#shop-bakery').removeClass("active");
+              } else if ($("#shop-cafe").hasClass("active")) {
+                $('#currentlocation').toggleClass('active');
+                $('#search').toggleClass('active');
+              } else {
+                $('#currentlocation').toggleClass('active');
+                $('#search').toggleClass('active');
+              }
 
-              // if ($('#currentlocation').hasClass('active')) {
-              //   $('#currentlocation').toggleClass('active');
-              // }
-              // if ($("#currentlocation").hasClass("active")) {
 
-              //   //class activeがあれば
-              // } else if (!$("#currentlocation").hasClass("active")) {
-              //   $('#currentlocation').toggleClass('active');
-              // }
+
             });
+
             google.maps.event.addListener(bakery, 'click', function (event) {
               $('#shop-cafe').css('display', 'none');
               $('#shop-sweets').css('display', 'none');
               $('#shop-bakery').slideToggle();
-              map.panTo(new google.maps.LatLng(35.010362, 135.768735));
 
-              $('#currentlocation').toggleClass('active');
-              $('#search').toggleClass('active');
+              if ($("#shop-bakery").hasClass("active")) {
+                $('#shop-bakery').removeClass("active");
+              } else if (!$("#shop-bakery").hasClass("active")) {
+                $('#shop-bakery').addClass('active');
+              }
+              map.panTo(new google.maps.LatLng(35.571647, 139.717652));
+              // $('#currentlocation').toggleClass('active');
+              // $('#search').toggleClass('active');
+
+              if (($("#shop-sweets").hasClass("active")) || ($("#shop-cafe").hasClass("active"))) {
+                // console.log("正解");
+                $('#shop-cafe').removeClass("active");
+                $('#shop-sweets').removeClass("active");
+              } else if (!$("#shop-bakery").hasClass("active")) {
+                $('#currentlocation').toggleClass('active');
+                // console.log("微妙")
+                $('#search').toggleClass('active');
+              } else {
+                $('#currentlocation').toggleClass('active');
+                // console.log("不正解")
+                $('#search').toggleClass('active');
+              }
+              // if (($("#shop-sweets").hasClass("active")) || ($("#shop-cafe").hasClass("active"))) {
+              //   console.log("正解")
+              // } else if (!$("#shop-bakery").hasClass("active")) {
+              //   $('#currentlocation').toggleClass('active');
+              //   console.log("微妙")
+              // } else {
+              //   $('#currentlocation').toggleClass('active');
+              //   console.log("不正解")
+              // }
+
+
+
             });
+
             google.maps.event.addListener(sweets, 'click', function (event) {
               $('#shop-cafe').css('display', 'none');
               $('#shop-bakery').css('display', 'none');
               $('#shop-sweets').slideToggle();
-              map.panTo(new google.maps.LatLng(43.066052, 141.348294));
 
-              $('#currentlocation').toggleClass('active');
-              $('#search').toggleClass('active');
+              if ($("#shop-sweets").hasClass("active")) {
+                $('#shop-sweets').removeClass("active");
+              } else if (!$("#shop-sweets").hasClass("active")) {
+                $('#shop-sweets').addClass('active');
+              }
+              map.panTo(new google.maps.LatLng(35.570116, 139.708308));
+              // $('#currentlocation').toggleClass('active');
+              // $('#search').toggleClass('active');
+              if (($("#shop-cafe").hasClass("active")) || ($("#shop-bakery").hasClass("active"))) {
+                $('#shop-cafe').removeClass("active");
+                $('#shop-bakery').removeClass("active");
+              } else if (!$("#shop-sweets").hasClass("active")) {
+                $('#currentlocation').toggleClass('active');
+                $('#search').toggleClass('active');
+              } else {
+                $('#currentlocation').toggleClass('active');
+                $('#search').toggleClass('active');
+              }
+
+
+
+
             });
+
+
 
             google.maps.event.addListener(map, 'click', function (event) {
               $('#shop-cafe').css('display', 'none');
@@ -136,10 +213,28 @@
               $('#search').removeClass('active');
             });
 
+
             $('#currentlocation').click(function () {
+              $('#currentlocation').toggleClass('active');
+              $('#search').toggleClass('active');
+              $('#shop-cafe').css('display', 'none');
+              $('#shop-bakery').css('display', 'none');
+              $('#shop-sweets').css('display', 'none');
               map.panTo(latlng);
+              // map.setZoom(map.getZoom(1));
+              map.setZoom(15);
             });
 
+            $('#tab-button-tab2').click(function () {
+              $('#currentlocation').toggleClass('active');
+              $('#search').toggleClass('active');
+              $('#shop-cafe').css('display', 'none');
+              $('#shop-bakery').css('display', 'none');
+              $('#shop-sweets').css('display', 'none');
+              map.panTo(latlng);
+              // map.setZoom(map.getZoom(1));
+              map.setZoom(15);
+            });
 
 
 
@@ -169,18 +264,21 @@
               $('#currentlocation').toggleClass('active');
               $('#search').toggleClass('active');
               map.panTo(cafe.position);
+              $('#shop-cafe').addClass('active');
             });
             $(document).on('click', '#sweets', function () {
               $('#shop-sweets').slideToggle();
               $('#currentlocation').toggleClass('active');
               $('#search').toggleClass('active');
               map.panTo(sweets.position);
+              $('#shop-sweets').addClass('active');
             });
             $(document).on('click', '#bakery', function () {
               $('#shop-bakery').slideToggle();
               $('#currentlocation').toggleClass('active');
               $('#search').toggleClass('active');
               map.panTo(bakery.position);
+              $('#shop-bakery').addClass('active');
             });
 
 

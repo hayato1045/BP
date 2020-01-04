@@ -4,14 +4,13 @@ ion-toolbar, ion-tab-bar{
 .pointcard {
   height: 30vh;
   width: auto;
-  padding: 0 5vw;
-  
-  img {
+img {
+  display: block;
     margin:0 auto;
     height: 30vh;
-    width: auto;
-    overflow: hidden;
     opacity: 1;
+    width: auto;
+    max-width: 350px;
   }
 }
 
@@ -27,12 +26,14 @@ ion-slides {
     width: auto;
 
     ion-card-header{
+      padding: 1.5vh;
       ion-card-subtitle{
         margin-bottom: 10px;
         text-align: left;
     }
     ion-card-title{
-      font-size: 24px;
+      // font-size: 24px;
+      font-size: 3vh;
     }
   }
     img {
@@ -46,12 +47,13 @@ ion-slides {
 ion-button{
   // width: 80vw;
   width: 50vw;
-  margin:20px auto;
-  height: 35px;
-  font-size: 20px;
+  margin:2vh auto 0 auto;
+  height: 5vh;
+  // font-size: 20px;
+  font-size: 2.5vh;
 font-weight: bold;
---padding-top:10px;
-  --padding-bottom:10px;
+--padding-top:0;
+  --padding-bottom:0;
 }
 
 
