@@ -211,12 +211,20 @@
               $('#shop-sweets').css('display', 'none');
               $('#currentlocation').removeClass('active');
               $('#search').removeClass('active');
+              $('#shop-sweets').removeClass("active");
+              $('#shop-cafe').removeClass("active");
+              $('#shop-bakery').removeClass("active");
             });
 
 
             $('#currentlocation').click(function () {
-              $('#currentlocation').toggleClass('active');
-              $('#search').toggleClass('active');
+              if ($("#currentlocation").hasClass("active")) {
+                $('#currentlocation').removeClass("active");
+                $('#search').removeClass('active');
+              } else if (!$("#currentlocation").hasClass("active")) {
+              }
+              // $('#currentlocation').toggleClass('active');
+              // $('#search').toggleClass('active');
               $('#shop-cafe').css('display', 'none');
               $('#shop-bakery').css('display', 'none');
               $('#shop-sweets').css('display', 'none');
@@ -326,6 +334,10 @@
         $('#currentlocation').toggleClass('hide');
         $('#currentlocation').removeClass('active');
         $('#search').removeClass('active');
+
+        $('#shop-sweets').removeClass("active");
+        $('#shop-cafe').removeClass("active");
+        $('#shop-bakery').removeClass("active");
         // $('ion-searchbar').css('display', 'block');
         // $('ion-list').css('display', 'block');
         // $('#map').css('display', 'none');
