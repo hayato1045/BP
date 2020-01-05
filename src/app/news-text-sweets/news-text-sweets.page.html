@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="戻る" defaultHref="/tabs/tab3"></ion-back-button>
+    </ion-buttons>
+    <ion-title>ニュース</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="/assets/app-icon.png">
+      </ion-thumbnail>
+      <ion-label>
+        <p>蒲田屋</p>
+        <h2>営業時間変更のお知らせ</h2>
+      </ion-label>
+      <p class="time">10m</p>
+    </ion-item>
+    <ion-card-content>
+      <p>いつも蒲田屋をご利用頂き、誠にありがとうございます。</p>
+      <p>誠に勝手ながら2000年00月00日より、営業時間を下記のとおり変更いたします。</p>
+      <br>
+      　<p>■変更前 00：00～00：00</p>
+      　<p>■変更後 00：00～00：00</p>
+      <br>
+      　<p>引き続きご愛願賜りますようお願い申し上げます。</p>
+    </ion-card-content>
+  </ion-card>
+  <div class="botton-wrapper">
+    <ion-button size="small" routerLink="/shop-sweets" routerDirection="forward">お店の情報</ion-button>
+    <ion-button size="small" routerLink="/news-sweets" routerDirection="forward">その他のニュース</ion-button>
+  </div>
+</ion-content>

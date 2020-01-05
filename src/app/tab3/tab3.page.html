@@ -26,35 +26,35 @@
 
   <div [ngSwitch]="news">
     <ion-list *ngSwitchCase="'today'">
-      <ion-card routerLink="/news-text" routerDirection="forward">
+      <ion-card routerLink="/news-text-cafe" routerDirection="forward">
         <ion-item>
           <ion-thumbnail slot="start">
             <img src="/assets/app-icon.png"> </ion-thumbnail>
           <ion-label>
             <p>カマタカフェ</p>
-            <h2>営業時間のお知らせ</h2>
+            <h2>オープンのお知らせ</h2>
           </ion-label>
           <p class="time">10m</p>
         </ion-item>
       </ion-card>
-      <ion-card routerLink="/news-text" routerDirection="forward">
+      <ion-card routerLink="/news-text-bakery" routerDirection="forward">
         <ion-item>
           <ion-thumbnail slot="start">
             <img src="/assets/app-icon.png"> </ion-thumbnail>
           <ion-label>
-            <p>カマタカフェ</p>
-            <h2>営業時間のお知らせ</h2>
+            <p>BAKERY-KAMATA-</p>
+            <h2>キャンペーンのお知らせ</h2>
           </ion-label>
           <p class="time">10m</p>
         </ion-item>
       </ion-card>
-      <ion-card routerLink="/news-text" routerDirection="forward">
+      <ion-card routerLink="/news-text-sweets" routerDirection="forward">
         <ion-item>
           <ion-thumbnail slot="start">
             <img src="/assets/app-icon.png"> </ion-thumbnail>
           <ion-label>
-            <p>カマタカフェ</p>
-            <h2>営業時間のお知らせ</h2>
+            <p>蒲田屋</p>
+            <h2>営業時間変更のお知らせ</h2>
           </ion-label>
           <p class="time">10m</p>
         </ion-item>
@@ -63,36 +63,35 @@
     </ion-list>
 
     <ion-list *ngSwitchCase="'near'">
-      <ion-card routerLink="/news-text" routerDirection="forward">
-        <ion-item>
-          <ion-thumbnail slot="start">
-            <img src="/assets/app-icon.png">
-          </ion-thumbnail>
-          <ion-label>
-            <p>カマタカフェ</p>
-            <h2>営業時間のお知らせ</h2>
-          </ion-label>
-          <p class="time">10m</p>
-        </ion-item>
-      </ion-card>
-      <ion-card routerLink="/news-text" routerDirection="forward">
+      <ion-card routerLink="/news-text-cafe" routerDirection="forward">
         <ion-item>
           <ion-thumbnail slot="start">
             <img src="/assets/app-icon.png"> </ion-thumbnail>
           <ion-label>
             <p>カマタカフェ</p>
-            <h2>営業時間のお知らせ</h2>
+            <h2>オープンのお知らせ</h2>
           </ion-label>
           <p class="time">10m</p>
         </ion-item>
       </ion-card>
-      <ion-card routerLink="/news-text" routerDirection="forward">
+      <ion-card routerLink="/news-text-bakery" routerDirection="forward">
         <ion-item>
           <ion-thumbnail slot="start">
             <img src="/assets/app-icon.png"> </ion-thumbnail>
           <ion-label>
-            <p>カマタカフェ</p>
-            <h2>営業時間のお知らせ</h2>
+            <p>BAKERY-KAMATA-</p>
+            <h2>キャンペーンのお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
+      </ion-card>
+      <ion-card routerLink="/news-text-sweets" routerDirection="forward">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/app-icon.png"> </ion-thumbnail>
+          <ion-label>
+            <p>蒲田屋</p>
+            <h2>営業時間変更のお知らせ</h2>
           </ion-label>
           <p class="time">10m</p>
         </ion-item>
