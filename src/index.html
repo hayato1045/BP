@@ -20,17 +20,21 @@
   <meta name="apple-mobile-web-app-title" content="BOOK PLACE">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#15923B">
-  <link rel="apple-touch-icon" href="/assets/app-icon.png" sizes="114x114">
-  <link rel="apple-touch-icon" href="/assets/app-icon.png" sizes="120x120">
-  <link rel="apple-touch-icon" href="/assets/app-icon.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/assets/BOOKPLACE-logo.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/assets/BOOKPLACE-logo.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/assets/BOOKPLACE-logo.png" sizes="144x144">
 </head>
 
 <body>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script async defer
+  <script
     src="https://maps.google.com/maps/api/js?key=AIzaSyBhljMO2LmCNaCBUkZITdhccYO91doZB2o&amp;language=ja"></script>
+  <script>
+  //   <script async defer
+  //   src="https://maps.google.com/maps/api/js?key=AIzaSyBhljMO2LmCNaCBUkZITdhccYO91doZB2o&amp;language=ja"></script>
+  //
   <script>
 
 
@@ -234,8 +238,6 @@
             });
 
             $('#tab-button-tab2').click(function () {
-              $('#currentlocation').toggleClass('active');
-              $('#search').toggleClass('active');
               $('#shop-cafe').css('display', 'none');
               $('#shop-bakery').css('display', 'none');
               $('#shop-sweets').css('display', 'none');
