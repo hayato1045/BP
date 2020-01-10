@@ -59,8 +59,32 @@
           <p class="time">10m</p>
         </ion-item>
       </ion-card>
+      <ion-card routerLink="/news-text-florist" routerDirection="forward">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/florist-logo.svg"> </ion-thumbnail>
+          <ion-label>
+            <p>Florist's OTA</p>
+            <h2>営業時間変更のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
+      </ion-card>
+      <ion-card routerLink="/news-text-dagashi" routerDirection="forward">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/dagashi-logo.svg"> </ion-thumbnail>
+          <ion-label>
+            <p>駄菓子太田屋</p>
+            <h2>営業時間変更のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
+      </ion-card>
 
     </ion-list>
+
+
 
     <ion-list *ngSwitchCase="'near'">
       <ion-card routerLink="/news-text-cafe" routerDirection="forward">
@@ -96,7 +120,31 @@
           <p class="time">10m</p>
         </ion-item>
       </ion-card>
+      <ion-card routerLink="/news-text-florist" routerDirection="forward">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/florist-logo.svg"> </ion-thumbnail>
+          <ion-label>
+            <p>Florist's OTA</p>
+            <h2>営業時間変更のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
+      </ion-card>
+      <ion-card routerLink="/news-text-dagashi" routerDirection="forward">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="/assets/dagashi-logo.svg"> </ion-thumbnail>
+          <ion-label>
+            <p>駄菓子太田屋</p>
+            <h2>営業時間変更のお知らせ</h2>
+          </ion-label>
+          <p class="time">10m</p>
+        </ion-item>
+      </ion-card>
     </ion-list>
+
+
 
     <ion-list *ngSwitchCase="'like'">
       <ion-card class="like" routerLink="/news-cafe" routerDirection="forward">
@@ -141,6 +189,33 @@
         </div>
       </ion-card>
       <hr>
+      <ion-card class="like" routerLink="/news-florist" routerDirection="forward">
+        <div class="shop-info">
+          <div class="card-wrapper">
+            <ion-card-subtitle>花屋</ion-card-subtitle>
+            <ion-card-title>Florist's　OTA</ion-card-title>
+            <div class="categories">
+              <div class="syousetu">小説</div>
+              <div class="ehon">絵本</div>
+              <div class="yousyo">洋書</div>
+            </div>
+          </div>
+        </div>
+      </ion-card>
+      <hr>
+      <ion-card class="like" routerLink="/news-dagashi" routerDirection="forward">
+        <div class="shop-info">
+          <div class="card-wrapper">
+            <ion-card-subtitle>駄菓子屋</ion-card-subtitle>
+            <ion-card-title>駄菓子太田屋</ion-card-title>
+            <div class="categories">
+              <div class="syousetu">小説</div>
+              <div class="ehon">絵本</div>
+              <div class="yousyo">洋書</div>
+            </div>
+          </div>
+        </div>
+      </ion-card>
     </ion-list>
   </div>
 </ion-content>

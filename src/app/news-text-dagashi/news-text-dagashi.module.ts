@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ShopBarkeryPageRoutingModule } from './shop-barkery-routing.module';
+import { NewsTextDagashiPageRoutingModule } from './news-text-dagashi-routing.module';
 
-import { ShopBarkeryPage } from './shop-barkery.page';
+import { NewsTextDagashiPage } from './news-text-dagashi.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ShopBarkeryPageRoutingModule
+    NewsTextDagashiPageRoutingModule
   ],
-  declarations: [ShopBarkeryPage]
+  declarations: [NewsTextDagashiPage]
 })
-export class ShopBarkeryPageModule {}
+export class NewsTextDagashiPageModule {}

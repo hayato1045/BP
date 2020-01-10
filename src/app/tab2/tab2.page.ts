@@ -16,6 +16,8 @@ export class Tab2Page {
       { name: 'カマタカフェ', relation: 'カフェ', id: 'cafe' },
       { name: 'パン屋-kamata', relation: 'パン屋', id: 'bakery' },
       { name: '蒲田屋', relation: '和菓子屋', id: 'sweets' },
+      { name: "Florist's OTA", relation: '花屋', id: 'florist' },
+      { name: "駄菓子太田屋", relation: '駄菓子屋', id: 'dagashi' },
     ];
   }
 

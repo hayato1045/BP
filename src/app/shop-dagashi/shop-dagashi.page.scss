@@ -33,51 +33,6 @@ ion-toolbar {
     pointer-events: none;
   }
 }
-
-// .shop-info {
-//   margin-top: 25vh;
-//   border-radius: 30px 30px 0 0;
-//   background-color: white;
-//   width: 100vw;
-//   height: 1000px;
-//   position: absolute;
-//   z-index: 100;
-//   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
-//   padding: 30px;
-//   ion-card-subtitle{
-//     font-size: 18px;
-//   }
-//   ion-card-title{
-//     font-size: 24px;
-//   }
-//   .card-wrapper {
-//     height: 150px;
-
-//     ion-card-subtitle{
-//       margin-bottom: 10px;
-//     }
-//     ion-card-title {
-//       margin-bottom: 20px;
-//     }
-
-//     .categories {
-//       display: flex;
-
-//       .syousetu {
-//         @extend .kind;
-//         background-color: #3290FF;
-//       }
-//       .ehon{
-//         @extend .kind;
-//         background-color: #FF993A;
-//       }
-//       .yousyo{
-//         @extend .kind;
-//         background-color: #BB6BD9;
-//       }
-//     }
-//   }
-// }
 .shop-info {
   margin-top: 25vh;
   border-radius: 20px 20px 0 0;
@@ -124,18 +79,6 @@ ion-toolbar {
     }
   }
 }
-ion-button{
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
-  // width: 80vw;
-  margin: 20px auto 0  auto;
-  width: calc(100vw - 50px);
-  margin-left: -0.5px;
-  height: auto;
-  font-size: 24px;
-  font-weight: bold;
-  --padding-top:10px;
-  --padding-bottom:10px;
-}
 hr{
   border: 0 none; 
   margin-top: 20px;
@@ -146,8 +89,8 @@ hr{
 }
 ion-list{  
   ion-item{
-    --padding-start:0;
-    --padding-end:0;
+    --padding-start:2.5vw;
+    --padding-end:2.5vw;
     i{
       margin-right:10px;
     }
@@ -156,7 +99,7 @@ ion-list{
 ion-button{
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
   // width: 80vw;
-  margin: 0  auto;
+  margin: 20px auto 0  auto;
   width: calc(100vw - 50px);
   margin-left: -0.5px;
   height: auto;

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="戻る" defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>お店</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="shop-info">
+    <div class="card-wrapper">
+      <ion-card-subtitle>花屋</ion-card-subtitle>
+      <ion-card-title>Florist's　OTA</ion-card-title>
+      <div class="categories">
+        <div class="syousetu">小説</div>
+        <div class="ehon">絵本</div>
+        <div class="yousyo">洋書</div>
+      </div>
+      <hr>
+      <ion-list lines="full">
+        <ion-item>
+          <i class="icon-img"><img src="/assets/lct.svg" alt=""></i>
+          <p>〒123-456 東京都大田区〇〇 </p>
+        </ion-item>
+        <ion-item>
+          <i class="icon-img"><img src="/assets/phone.svg" alt=""></i>
+          <p>123-456-789</p>
+        </ion-item>
+        <ion-item>
+          <i class="icon-img"><img src="/assets/www.svg" alt=""></i>
+          <p>〇〇〇〇〇〇.com</p>
+        </ion-item>
+      </ion-list>
+      <ion-button size="small" routerLink="/news-florist" routerDirection="forward">お店のニュース</ion-button>
+    </div>
+  </div>
+
+  <div class="map-style">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3245.660728627178!2d139.72418631519767!3d35.56208034410482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDMzJzQzLjUiTiAxMznCsDQzJzM1LjAiRQ!5e0!3m2!1sja!2sjp!4v1578636889872!5m2!1sja!2sjp"
+      frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+
+
+</ion-content>
