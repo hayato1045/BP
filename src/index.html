@@ -64,8 +64,6 @@
               opts // マップオプション
             );
 
-
-
             var currentlocation = new google.maps.Marker({ //現在地マーカー
               map: map, // 対象の地図オブジェクト
               position: latlng // 緯度・経度
@@ -74,36 +72,52 @@
             var cafe = new google.maps.Marker({
               map: map,
               position: new google.maps.LatLng(35.562753, 139.716135), // カフェマーカー
-              icon: 'assets/pin.svg',
+              // icon: 'assets/pin.svg',
               zoom: 15,
+              icon: {
+                url: 'assets/pin.png',
+                scaledSize: new google.maps.Size(60, 70)
+              }
             });
 
             var bakery = new google.maps.Marker({
               map: map,
               position: new google.maps.LatLng(35.571647, 139.717652), // パン屋マーカー
-              icon: 'assets/pin.svg',
               zoom: 15,
+              icon: {
+                url: 'assets/pin.png',
+                scaledSize: new google.maps.Size(60, 70)
+              }
             });
 
             var sweets = new google.maps.Marker({
               map: map,
               position: new google.maps.LatLng(35.569619, 139.707603), // 和菓子屋マーカー
-              icon: 'assets/pin.svg',
               zoom: 15,
+              icon: {
+                url: 'assets/pin.png',
+                scaledSize: new google.maps.Size(60, 70)
+              }
             });
 
             var florist = new google.maps.Marker({
               map: map,
               position: new google.maps.LatLng(35.562076, 139.726375), // 花屋マーカー
-              icon: 'assets/pin.svg',
               zoom: 15,
+              icon: {
+                url: 'assets/pin.png',
+                scaledSize: new google.maps.Size(60, 70)
+              }
             });
 
             var dagashi = new google.maps.Marker({
               map: map,
               position: new google.maps.LatLng(35.556908, 139.722511), // 駄菓子屋マーカー
-              icon: 'assets/pin.svg',
               zoom: 15,
+              icon: {
+                url: 'assets/pin.png',
+                scaledSize: new google.maps.Size(60, 70)
+              }
             });
 
             google.maps.event.addListener(cafe, 'click', function (event) { //カフェマーカークリックした時
