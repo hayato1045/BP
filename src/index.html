@@ -41,13 +41,6 @@
     //   src="https://maps.google.com/maps/api/js?key=AIzaSyBhljMO2LmCNaCBUkZITdhccYO91doZB2o&amp;language=ja">
   </script>
   <script>
-    $(function () {
-      $(window).on('load');
-      $('.loader-slide').addClass('open');
-      setTimeout(function () {
-        $('#loader').css('display', 'none');
-      }, 2000);
-    });
 
     function initMap() {
 
@@ -406,6 +399,13 @@
       initMap();
     }
     var slides = document.querySelector('ion-slides');
+    $(function () {
+      $(window).on('load');
+      $('.loader-slide').addClass('open');
+      setTimeout(function () {
+        $('#loader').css('display', 'none');
+      }, 5000);
+    });
   </script>
 </body>
 
