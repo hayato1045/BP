@@ -29,3 +29,44 @@
     *:focus {
     outline: none;
     }
+
+    #loader {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10000;
+      }
+      #loader .loader-slide {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: #178C42;
+      
+      }
+      #loader .loader-slide img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 30vw;
+        height: auto;
+      }
+      #loader .loader-slide.open {
+        animation-name: slideOut;
+        animation-fill-mode: forwards;
+        animation-duration: 1.5s;
+        animation-delay: 1.5s;
+      }
+      @keyframes slideOut {
+        0% {
+              opacity:1;
+          }
+          100% {
+              opacity:0;
+          }
+      }
