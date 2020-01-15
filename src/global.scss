@@ -52,15 +52,15 @@
         left: 0;
         right: 0;
         bottom: 0;
-        margin: auto;
+        margin:  37.5vh auto auto;
         width: 30vw;
         height: auto;
       }
       #loader .loader-slide.open {
         animation-name: slideOut;
         animation-fill-mode: forwards;
-        animation-duration: 4s;
-        animation-delay: 4s;
+        animation-duration: 7s;
+        animation-delay: 7s;
       }
       @keyframes slideOut {
         0% {
