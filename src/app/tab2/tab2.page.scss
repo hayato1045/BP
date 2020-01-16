@@ -206,4 +206,29 @@ ion-button{
   --padding-top:10px;
   --padding-bottom:10px;
 }
+#loader-map {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
 
+#loader-map-content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color:white;
+ img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin:  37.5vh auto auto;
+  width: 100vw;
+  height: auto;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+
+}}}

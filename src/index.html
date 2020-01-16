@@ -40,6 +40,7 @@
     //   <script async defer
     //   src="https://maps.google.com/maps/api/js?key=AIzaSyBhljMO2LmCNaCBUkZITdhccYO91doZB2o&amp;language=ja">
   </script>
+  <script>src = "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"</script>
   <script>
 
     function initMap() {
@@ -404,8 +405,17 @@
       $('.loader-slide').addClass('open');
       setTimeout(function () {
         $('#loader').css('display', 'none');
-      }, 8000);
+      }, 6000);
+
+      lottie.loadAnimation({
+        container: document.getElementById('loading-map'), // アニメーションをさせたいdivなどhtml要素ににつけた名前
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '/assets/json/data.json' // 自分が書き出したjsonファイルの名前と場所（パス）を記述
+      });
     });
+
   </script>
 </body>
 
